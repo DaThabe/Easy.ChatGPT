@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Example", "Example\Example.csproj", "{3F59B323-B919-4489-AC5F-A601ECA82D27}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Thabe.Kit.EasyChatGPT", "Thabe.Kit.EasyChatGPT\Thabe.Kit.EasyChatGPT.csproj", "{3DA200EA-38D1-4873-BF64-0A7D74A248FF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3F59B323-B919-4489-AC5F-A601ECA82D27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F59B323-B919-4489-AC5F-A601ECA82D27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F59B323-B919-4489-AC5F-A601ECA82D27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F59B323-B919-4489-AC5F-A601ECA82D27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DA200EA-38D1-4873-BF64-0A7D74A248FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DA200EA-38D1-4873-BF64-0A7D74A248FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DA200EA-38D1-4873-BF64-0A7D74A248FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DA200EA-38D1-4873-BF64-0A7D74A248FF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9FC85C6B-7E8A-4D90-99EE-D3625C63DAFC}
+	EndGlobalSection
+EndGlobal

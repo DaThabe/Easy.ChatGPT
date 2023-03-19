@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<Title>Easy.ChatGPT</Title>
+		<Authors>DaThabe</Authors>
+		<PackageProjectUrl>https://github.com/DaThabe/Easy.ChatGPT</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/DaThabe/Easy.ChatGPT</RepositoryUrl>
+		<PackageTags>ChatGPT, OpenAI, GPT</PackageTags>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<Description>简单的ChatGPT3.5Turbo API调用,支持无上下文和有上下文的请求</Description>
+		<Version>1.0.1</Version>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Flurl.Http" Version="3.2.4" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+		<None Include="..\README.md" Pack="true" PackagePath="" />
+	</ItemGroup>
+
+</Project>
