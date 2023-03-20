@@ -1,4 +1,6 @@
 # Easy.ChatGPT
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FDaThabe%2FEasy.ChatGPT.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FDaThabe%2FEasy.ChatGPT?ref=badge_shield)
+
 
 一个简单调用ChatGPT API 的实现
 
@@ -45,3 +47,6 @@ messages.AddAssistantMessage("这是一个助手消息")
 //把构建的消息一起发送后获取助手的消息
 Console.WriteLine(await client.SendMessagesAsync(messages));
 ```
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FDaThabe%2FEasy.ChatGPT.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FDaThabe%2FEasy.ChatGPT?ref=badge_large)
