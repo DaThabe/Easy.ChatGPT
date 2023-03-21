@@ -1,6 +1,19 @@
-# Easy.ChatGPT
+# Easy.ChatGPT V1.0.2
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FDaThabe%2FEasy.ChatGPT.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FDaThabe%2FEasy.ChatGPT?ref=badge_shield)
+
 
 一个简单调用ChatGPT API 的实现
+
+## 新增内容
+* 请求超时， 前版本没有这个导致的无响应问题
+* 可通过以下方式设置超时时间，默认是30秒
+``` C#
+ChatGPTClient client = new("API-KEY")
+{
+    Timeout = TimeSpan.FromSeconds(60)
+};
+```
 
 ## 用法演示
 
@@ -45,3 +58,6 @@ messages.AddAssistantMessage("这是一个助手消息")
 //把构建的消息一起发送后获取助手的消息
 Console.WriteLine(await client.SendMessagesAsync(messages));
 ```
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FDaThabe%2FEasy.ChatGPT.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FDaThabe%2FEasy.ChatGPT?ref=badge_large)

@@ -7,7 +7,11 @@ using Thabe.Kit.EasyChatGPT.Model.Data;
 
 
 //创建ChatGPT客户端 需要替换自己的 API-KEY
-ChatGPTClient client = new("API-KEY");
+ChatGPTClient client = new("API-KEY")
+{
+    //更改为60秒超时
+    Timeout = TimeSpan.FromSeconds(60)
+};
 
 
 //发送一条用户消息并且获取助手回复  这样发送消息不会创建上下文消息

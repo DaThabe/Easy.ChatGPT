@@ -30,6 +30,11 @@ public class ChatGPTClient
     /// </summary>
     public string ModelName { get; private set; }
 
+    /// <summary>
+    /// 请求超时时常 默认30秒
+    /// </summary>
+    public TimeSpan Timeout { get; init; } = TimeSpan.FromSeconds(30);
+
 
     /// <summary>
     /// 初始化ChatGPT客户端
@@ -72,7 +77,9 @@ public class ChatGPTClient
     /// <param name="data">请求内容</param>
     private async Task<ResponseContent> Request(RequestContent data)
     {
-        var resp = await _flurlRequest.PostJsonAsync(data);
+        var resp = await _flurlRequest
+            .WithTimeout(Timeout)
+            .PostJsonAsync(data);
 
         return await resp.GetJsonAsync<ResponseContent>();
     }

@@ -1,4 +1,5 @@
 ﻿using Thabe.Kit.EasyChatGPT;
+using Thabe.Kit.EasyChatGPT.Model.Data;
 
 namespace Thabe.Kit.EasyChatGPT;
 
